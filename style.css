@@ -1,0 +1,84 @@
+/* Reset basic margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling - Pink Background */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffe6e6; /* Soft pink background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden; /* Prevents scrollbars when button grows */
+}
+
+.container {
+    text-align: center;
+    position: relative;
+    width: 90%;
+    max-width: 500px;
+}
+
+/* GIF Image Styling */
+.gif-container img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Text Styling */
+h1 {
+    font-size: 1.8rem;
+    color: #5c3c3c;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+/* Buttons Container */
+.btn-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* General Button Styling */
+button {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Yes Button specific styling */
+.yes-btn {
+    background-color: #ff4d6d;
+    color: white;
+}
+
+.yes-btn:hover {
+    background-color: #ff2e56;
+    transform: scale(1.05);
+}
+
+/* No Button specific styling */
+.no-btn {
+    background-color: white;
+    color: #333;
+}
+
+.no-btn:hover {
+    background-color: #f0f0f0;
+}
